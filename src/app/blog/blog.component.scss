@@ -1,0 +1,29 @@
+.container {
+	margin: 0 auto;
+	width: 800px;
+	.h1 {
+		text-align: center;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	.createButton {
+		border-radius: 5px;
+	}
+	.post {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+		border-radius: 5px;
+		.actions {
+			display: flex;
+		}
+	}
+}
+
+.edit {
+	display: flex;
+	align-items: center;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}

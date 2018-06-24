@@ -1,0 +1,14 @@
+<section>
+    <div class="container">
+    	<h1 class="h1"><span>Blog Posts</span></h1>
+        <button class="createButton" [routerLink]="[-1, 'edit']" mat-raised-button>Sukurti naują</button>
+
+        <mat-card *ngFor="let post of posts" class="post">
+        	<h2>{{post.title}}</h2>
+            <div class="actions">
+                <a class="edit" [routerLink]="[post.id]">Skaityti</a>
+                <a class="edit" [routerLink]="[post.id, 'edit']">Redaguoti</a>
+            </div>
+        </mat-card>
+    </div>
+</section>

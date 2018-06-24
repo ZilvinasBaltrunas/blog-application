@@ -1,0 +1,21 @@
+<div class="container">
+	<h2 *ngIf="isNew" class="h2">Sukurti naują įrašą</h2>
+	<h2 *ngIf="!isNew" class="h2">Redaguoti įrašą</h2>
+  <mat-form-field>
+    <input required #inputTitle [(ngModel)]="post.title" matInput placeholder="Pavadinimas">
+  </mat-form-field>
+
+  <mat-form-field>
+  	<textarea required #inputPost [(ngModel)]="post.post" matInput placeholder="Tekstas"></textarea>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input required #inputImg [(ngModel)]="post.img" matInput placeholder="Nuoroda į nuotrauką">
+  </mat-form-field>
+  <div>
+    <button class="button" routerLink="../../" mat-raised-button>Grįžti</button>
+    <button *ngIf="isNew" class="button" (click)="send(form1)" mat-raised-button>Išsaugoti</button>
+    <button *ngIf="!isNew" class="button" (click)="send(form1)" mat-raised-button>Redaguoti</button>
+    <button *ngIf="!isNew" class="button" (click)="delete(form1)" mat-raised-button>Ištrinti</button>
+  </div>
+</div>

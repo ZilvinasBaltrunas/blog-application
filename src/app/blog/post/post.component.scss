@@ -1,0 +1,17 @@
+.container {
+	margin: 0 auto;
+	width: 800px;
+	.post {
+		min-height: 15rem;
+		margin-top: 2rem;
+		.image {
+			width: 100%;
+		}
+		.back {
+			border-radius: 5px;
+		}
+	}
+}
+.img {
+	width: 100%;
+}

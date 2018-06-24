@@ -1,0 +1,17 @@
+.toolbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.logo {
+		width: 60px;
+		height: 60px;
+		display: flex;
+		
+		.logo__img {
+			width: 100%;
+		}
+	}
+	.blogLink {
+		color: #FFFFFF;
+	}
+}
